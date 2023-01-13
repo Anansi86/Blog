@@ -1,23 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-} from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Particle from "./components/Particle";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="Home" element={<Home />} />
-          <Route path="About" element={<About />} />
-        </Route>
-      </Routes>
-    </Router>
-  </React.StrictMode>
-);
+function App() {
+  return (
+    <>
+    
+    <Outlet />
+    <Particle />
+
+    </>
+  );
+}
+
+export default App;
