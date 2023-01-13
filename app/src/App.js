@@ -1,15 +1,14 @@
-import { Outlet } from "react-router-dom";
-import Particle from "./components/Particle";
-
+// import { Outlet } from "react-router-dom";
+import GetHeader from "./components/Header";
+import React from "react";
 
 function App() {
   return (
     <>
     
-    <Outlet />
-    <Particle />
-
-    </>
+    <GetHeader />
+    
+  </>
   );
 }
 

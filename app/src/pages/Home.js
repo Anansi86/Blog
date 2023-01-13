@@ -1,4 +1,5 @@
-import Particles from "react-tsparticles";
+import React from "react";
+
 
 const Home = () => {
     // },[])
@@ -6,7 +7,6 @@ const Home = () => {
     return (
         <div className="container">
         <h1>Hello World!</h1>
-        <Particles />
         </div>
     );
 };
